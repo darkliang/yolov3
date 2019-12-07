@@ -1,3 +1,4 @@
+torchvision
 # pip install -U -r requirements.txt
 numpy
 opencv-python

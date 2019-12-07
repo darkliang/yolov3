@@ -24,19 +24,3 @@ def parse_model_cfg(path):
                 mdefs[-1][key] = val.strip()
 
     return mdefs
-
-
-def parse_data_cfg(path):
-    # Parses the data configuration file
-    options = dict()
-    with open(path, 'r') as fp:
-        lines = fp.readlines()
-
-    for line in lines:
-        line = line.strip()
-        if line == '' or line.startswith('#'):
-            continue
-        key, val = line.split('=')
-        options[key.strip()] = val.strip()
-
-    return options
